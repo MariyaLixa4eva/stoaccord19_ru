@@ -1,0 +1,232 @@
+@media (max-width: 1205px) {
+  .container{
+      max-width: 90%;
+  }
+  .thesis-container {
+      margin-top: 50%;
+  }
+  .thesis-container h1 {
+      font-size: 3.5rem;
+  }
+  .thesis-container h3 {
+      font-size: 1.5rem;
+      letter-spacing: 5px;
+      font-weight:lighter;
+  }
+  h2 {
+      font-size: 3.3rem;
+  }
+  h2::after {
+      font-size: 9rem;
+  }
+  h2::before {
+      font-size: 6rem;
+  }
+  .splash {
+    height: 200px;
+  }
+  .remont-content {
+    width: 40%;
+  }
+  .remont-card {
+    width: 56%;
+  }
+  .img-work {
+    width: 216px;
+  }
+  .flip-card {
+    width: 216px;
+    height: 172.8px; 
+  }
+  
+  .headlight {
+    width: 459px;
+  }
+  .flip-card-headlight {
+    width: 459px;
+    height: 367.2px;
+  }
+}
+@media (max-width: 1045px) {
+  .wrapper .box{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 800px) {
+  .thesis-container h1 {
+      font-size: 3rem;
+  }
+  .thesis-container h3 {
+      font-size: 1.4rem;
+      letter-spacing: 4px;
+      font-weight:lighter;
+  }
+  h2 {
+      font-size: 3rem;
+  }
+  .splash {
+    height: 150px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .remont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .remont-content {
+    width: 100%;
+  }
+  .remont-card {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+  .img-work {
+    width: 300px;
+  }
+  .flip-card {
+    width: 300px;
+    height: 240px;
+    margin: 0 auto; 
+  }
+  .headlight {
+    width: 600px;
+  }
+  .flip-card-headlight {
+    width: 600px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 702px) {
+  .wrapper .box{
+    width: 100%;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+}
+  .contact div {
+    min-width: 100%;
+  }
+  .contact iframe {
+    height: 300px;
+    margin: 0;
+  }
+}
+@media (max-width: 700px){
+  .menu-btn{
+      display: block;
+      z-index: 2;
+  }
+  .menu-btn i.active:before {
+      content: '\f00d';
+  }
+  .navbar {
+      top: 0;
+  }
+  .navbar .menu {
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0px;
+      background-image: linear-gradient( 180deg, rgb(32, 38, 56) 0%, rgba(32, 38, 56, 0.980) 11%, rgba(32, 38, 56, 0.960) 22%, rgba(32, 38, 56, 0.940) 33%, rgba(32, 38, 56, 0.920) 44%, rgba(32, 38, 56, 0.920) 56%, rgba(32, 38, 56, 0.940) 67%, rgba(32, 38, 56, 0.960) 78%, rgba(32, 38, 56, 0.980) 89%, rgb(32, 38, 56) 100% );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.3s ease;
+      line-height: 80px;
+      z-index: 2;
+  }
+  .navbar .menu a {
+      margin-left:0px;
+  }
+  .navbar .menu.active {
+      left: 0;
+  }
+  .navbar .logo a {
+      font-size: 1.3rem;
+  }
+  .grid-section {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 15px;
+  }
+  .one {
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+  .two {
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+  .three {
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+  h2 {
+      font-size: 2.8rem;
+  }
+  h2::after {
+      font-size: 8rem;
+  }
+  h2::before {
+      font-size: 5.5rem;
+  }
+  .splash {
+    height: 120px;
+  }
+  .table-responsive .table thead th {
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+  .table-responsive .table tbody td {
+    padding: 5px 10px;
+    font-size: .8rem;
+  }
+  .table-responsive .table tbody td ol {
+    font-size: .8rem;
+  }
+}
+@media (max-width: 500px) {
+  .thesis-container h1 {
+      font-size: 2rem;
+  }
+  .thesis-container h3 {
+      font-size: 1rem;
+      letter-spacing: 4px;
+      font-weight:lighter;
+  }
+  .splash {
+    height: 75px;
+  }
+  footer .phone a {
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+  }
+  .remont-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headlight {
+    width: 300px;
+  }
+  .flip-card-headlight {
+    width: 300px;
+    height: 240px;
+  }
+}
+/* Для маленьких экранов увеличьте размер текста */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+  }

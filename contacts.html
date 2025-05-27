@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <meta name="description" content="Кузовной сервис 'Аккорд19' осуществляет ремонт любой степени сложности. Виды работ: ремонт пластиковых бамперов, покраска автомобиля, полировка, запчасти и комплектующие под заказ. Звоните." />
+    <link rel="icon" href="https://stoaccord19.ru/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="animate-pulse"><a href="tel:+79233925999"><i class="fa-solid fa-phone"></i></a></div>
+    <div class="splash"></div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="item-navbar">
+                <div class="logo"><a href="./index.html"><p>АВТОСЕРВИС <span>"АККОРД19"</span></p></a></div>
+                <div class="menu">
+                    <a href="./about.html">О нас</a>
+                    <a href="./services.html">Услуги</a>
+                    <a href="./contacts.html">Контакты</a>
+                </div>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <div class="contact">
+                <div>
+                    <form action="form.php" method="post">
+                        <input class="box" type="text"  name="name" placeholder="Ваше имя" required>
+                        <input class="box" type="email" name="email" placeholder="Адрес электронной почты" required>
+                        <input id="phone" class="box phone_mask" type="tel" name="tel" placeholder="Номер телефона" required>
+                        <input id="check" name="check" type="hidden" value="" />
+                        <textarea  name="message" cols="30" rows="10" placeholder="Ваше сообщение" maxlength="300" required></textarea>
+                        <input class="button" onclick="document.getElementById('check').value = 'secretcode';" type="submit" value="Отправить сообщение">
+                    </form>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180.5077573691603!2d91.37889877186275!3d53.71798599647482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x162d0f82137ddd25!2zNTPCsDQzJzA0LjgiTiA5McKwMjInNDcuNCJF!5e0!3m2!1sru!2sru!4v1652596340072!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div>
+                <div class="logo" itemscope itemtype="https://schema.org/AutomotiveBusiness">
+                    <a href="./index.html" itemprop="name">
+                        <p>АВТОСЕРВИС <span>"АККОРД19"</span></p>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="column-left">
+                        <div class="footer-info">
+                            <div class="phone">
+                                <p>
+                                    <a href="tel:+79233925999"><span itemprop="telephone">+7 (923) 392-59-99</span></a>
+                                </p>
+                            </div>
+                            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                <p>
+                                    Адрес:
+                                    <span itemprop="addressLocality">г.Абакан, </span>
+                                    <span itemprop="streetAddress">улица Складская, 15</span>
+                                </p>
+                                <p>Режим работы: <span itemprop="openingHours" content="Mo-Su 9:00-21:00">c 9:00 до 21:00, без перерывов и выходных</span></p>
+                            </div>
+                            <div class="icon">
+                                <a itemprop="email" href="mailto:sto_accord19@mail.ru"><i class="fa-solid fa-at"></i></a>
+                                <a href="https://wa.me/+79233925999"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://t.me/+79233925999"><i class="fa-brands fa-telegram"></i></a>
+                            </div>
+                            <div>
+                                <p>&copy; 2022</p>
+                            </div>
+                            <div>
+                                <p><a href="https://mlikhacheva.netlify.app/">by Mariya Likhacheva</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-right">
+                        <a href="./about.html">О нас</a>
+                        <a href="./services.html">Услуги</a>
+                        <a href="./contacts.html">Контакты</a>
+                        <a href="./policy.html">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="maskedinput.js"></script>
+    <script>
+		$(".phone_mask").mask("+7 (999) 999-99-99");
+	</script>
+    <script src="script.js"></script>
+</body>
+</html>

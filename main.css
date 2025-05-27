@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+:root {
+    --brand: #f07539;
+    --dark: #202638;
+    --grey: #525765;
+    --light-grey: #969ca7;
+    --light: #d9dbde;
+} 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Play', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section,
+footer {
+    width: 100%;
+    margin-top: 50px;
+}
+.animate-pulse {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    background-color: var(--brand);
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    animation: animate_pulse 3s infinite;
+}
+.animate-pulse i {
+    color: white;
+    font-size: 27px;
+}
+.animate-pulse:hover {
+    animation: none;
+}
+@keyframes animate_pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgb(240, 117, 56);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgb(240, 117, 56, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgb(240, 117, 56);
+    }
+}
+.splash {
+    width: 100%;
+    background-color: var(--dark);
+    background-image: url('FRRJHL2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    background-blend-mode: luminosity;
+    margin-top: 90px;
+    border-radius: 0 0 20px 20px ;
+}
+
+
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    line-height: 90px;
+    background-color: var(--dark);
+}
+
+.item-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.navbar .logo a {
+    color: var(--brand);
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar .logo a span {
+    color: var(--dark);
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+    margin-left: 5px;
+}
+.navbar .logo a span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: white;
+    border-radius: 5px;
+    transform: skewX(-10deg);
+    transform-origin: 0 0;
+}
+.navbar .logo a span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    border-radius: 5px;
+    transform: skewX(-10deg);
+    transform-origin: 0 0;
+}
+.navbar .menu {
+    text-transform: uppercase;
+}
+.navbar .menu a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 25px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.navbar .menu a:hover {
+    color: var(--brand);
+}
+.menu-btn{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/* заголовки */
+
+h2  {
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 4rem;
+    color: var(--dark);
+}
+h2::after  {
+    content: '\26ED';
+    position: absolute;
+    font-size: 10rem;
+    left: 0;
+    top: -70px;
+    transform: rotate(30deg);
+    z-index: -2;
+    color: rgba(82, 87, 101, 0.3);
+}
+h2::before  {
+    content: '\26ED';
+    position: absolute;
+    font-size: 7rem;
+    left: 50px;
+    top: -50px;
+    z-index: -1;
+    transform: rotate(15deg);
+    color: rgba(240, 118, 57, 0.3);
+}
+
+/* список */
+
+ol {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 0 0 0 45px;
+	padding: 15px 0 5px 0;
+	font-size: 16px;
+}
+ol li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
+	line-height: 1.4;
+}
+ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -38px;
+	width: 28px;
+	height: 28px;
+	background: var(--light-grey);
+	color: rgb(250, 237, 240);
+	text-align: center;
+	line-height: 28px;
+	font-size: 18px;
+    border: 1px solid var(--dark);
+}
+
+/* подвал */
+
+footer {
+    background-color: var(--dark);
+    border-radius: 20px 20px 0 0;
+    padding: 30px 0 30px 0;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.column-left,
+.column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .logo a {
+    color: var(--brand);
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+}
+footer .logo a span {
+    color: var(--dark);
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    margin-left: 5px;
+}
+footer .logo a span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: white;
+    border-radius: 5px;
+    transform: skewX(-10deg);
+    transform-origin: 0 0;
+}
+footer .logo a span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    border-radius: 5px;
+    transform: skewX(-10deg);
+    transform-origin: 0 0;
+}
+footer .footer-info p,
+footer .footer-info a,
+.column-right a{
+    color: white;
+}
+footer .phone {
+    margin: 20px 0;
+}
+footer .phone a {
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+footer .icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    max-width: 150px;
+}
+footer .icon i {
+    color: var(--brand);
+    font-size: 25px;
+}
